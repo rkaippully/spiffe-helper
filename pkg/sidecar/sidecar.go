@@ -218,7 +218,7 @@ func (s *Sidecar) writeCerts(file string, certs []*x509.Certificate) error {
 // formats as PEM, and writes it to file
 func (s *Sidecar) writeKey(file string, data []byte) error {
 	b := &pem.Block{
-		Type:  "EC PRIVATE KEY",
+		Type:  "PRIVATE KEY",
 		Bytes: data,
 	}
 
